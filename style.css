@@ -1,4 +1,127 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.portfolio-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.portfolio-logo {
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.6rem 0;
+  text-align: center;
+}
+
+.portfolio-header {
+  padding: 0;
+  margin: 0;
+  background: #1BB3EC;
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-container nav ul {
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.content-container {
+  width: 80vw;
+  margin: 0 auto;
+  background: rgba(236, 235, 235, 0.74);
+  margin-top: 4rem;
+}
+
+.content-container .item ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-container .item ul li {
+  padding: 2rem;
+}
+
+.content-container .item ul li:first-child p, .content-container a {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.content-container .item ul li:first-child a {
+  color: #fff;
+  background: #000;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.content-container .item ul li:nth-child(2) img {
+  width: 30vw;
+}
+
+@media (max-width: 800px) {
+  .content-container {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .content-container .item ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    background: #2691D8;
+  }
+  .content-container .item ul li {
+    padding: 1.5rem 2rem 1.5rem 0;
+  }
+  .content-container .item ul li:nth-child(2) img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-container .item ul li:nth-child(2) img {
+    width: 15rem;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;

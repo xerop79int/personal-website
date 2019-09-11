@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+$color: #1BB3EC;
+$color2:#2691D8;
+$font: 'Roboto', sans-serif;
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+a{
+    text-decoration: none;
+}
+
+.portfolio-container{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.portfolio-logo{
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.6rem 0;
+    text-align: center;
+}
+
+
+
+
+.portfolio-header{
+    padding: 0;
+    margin: 0;
+    background: $color;
+}
+
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 0;
+    margin: 0;
+
+    nav ul {
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
+
+
+.content-container{
+    width: 80vw;
+    margin: 0 auto;
+    background: rgba(236, 235, 235, 0.74);
+    margin-top: 4rem;
+    
+    
+
+
+    .item ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2rem;
+        align-items: center;
+        
+    }
+    .item ul li{
+        padding: 2rem;
+    }
+
+    .item ul li:first-child p,a{
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+
+    .item ul li:first-child a{
+        color: #fff;
+        background: #000;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+
+
+    .item ul li:nth-child(2) img{
+        width: 30vw;
+    }
+}
+
+
+
+
+@media (max-width:800px){
+
+    .content-container{
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 4rem;
+        
+    
+        .item ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: $color2;
+            
+        }
+
+        .item ul li{
+            padding: 1.5rem 2rem 1.5rem 0;
+        }
+        
+    
+        .item ul li:nth-child(2) img{
+            width: 20rem;
+        }
+    }
+
+}
+
+
+
+@media (max-width:800px){
+
+    .content-container{
+       
+        .item ul li:nth-child(2) img{
+            width: 15rem;
+        }
+    }
+}
+
