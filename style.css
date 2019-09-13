@@ -18,7 +18,7 @@ a {
 .portfolio-logo {
   width: 10rem;
   cursor: pointer;
-  padding: 0.6rem 0;
+  padding: 0.8rem 0;
   text-align: center;
 }
 
@@ -32,9 +32,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
@@ -72,6 +69,7 @@ a {
 .content-container .item ul li:first-child p, .content-container a {
   margin-bottom: 2rem;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .content-container .item ul li:first-child a {
@@ -113,12 +111,6 @@ a {
   }
   .content-container .item ul li:nth-child(2) img {
     width: 20rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .content-container .item ul li:nth-child(2) img {
-    width: 15rem;
   }
 }
 

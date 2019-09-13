@@ -23,7 +23,7 @@ a{
 .portfolio-logo{
     width: 10rem;
     cursor: pointer;
-    padding: 0.6rem 0;
+    padding: 0.8rem 0;
     text-align: center;
 }
 
@@ -39,7 +39,6 @@ a{
 
 .navbar-container{
     display: flex;
-    justify-content: space-between;
     align-items: space-between;
     padding: 0;
     margin: 0;
@@ -74,6 +73,7 @@ a{
     .item ul li:first-child p,a{
         margin-bottom: 2rem;
         font-weight: bold;
+        text-transform: capitalize;
     }
 
     .item ul li:first-child a{
@@ -122,16 +122,3 @@ a{
     }
 
 }
-
-
-
-@media (max-width:800px){
-
-    .content-container{
-       
-        .item ul li:nth-child(2) img{
-            width: 15rem;
-        }
-    }
-}
-
